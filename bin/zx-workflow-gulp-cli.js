@@ -3,15 +3,21 @@
 const { spawn } = require('child_process');
 const path = require('path');
 
+// 获取命令行参数
+const args = process.argv.slice(2);
+
+// 添加必要的参数
+args.push('--cwd', process.cwd());
+args.push('--gulpfile', require.resolve('../lib/index.js'));
+
+// 打印最终的参数列表以供调试（可选）
+// console.log('Final arguments:', args);
+
 // 构造 Gulp 命令及参数
-const args = [
-  'gulp',
-  '--cwd', process.cwd(),
-  '--gulpfile', path.resolve(__dirname, '../Gulpfile.js')
-].concat(process.argv.slice(2)); // 添加用户传递的额外参数
+const gulpPath = require.resolve('gulp/bin/gulp');
 
 // 启动子进程来运行 Gulp
-const gulpProcess = spawn('npx', args, {
+const gulpProcess = spawn('node', [gulpPath, ...args], {
   stdio: 'inherit', // 继承父进程的标准输入输出流
 });
 
