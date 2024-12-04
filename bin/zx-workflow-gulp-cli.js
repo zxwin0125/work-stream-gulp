@@ -13,11 +13,8 @@ args.push('--gulpfile', require.resolve('../lib/index.js'));
 // 打印最终的参数列表以供调试（可选）
 // console.log('Final arguments:', args);
 
-// 构造 Gulp 命令及参数
-const gulpPath = require.resolve('gulp/bin/gulp');
-
 // 启动子进程来运行 Gulp
-const gulpProcess = spawn('node', [gulpPath, ...args], {
+const gulpProcess = spawn('npx', ['gulp', ...args], {
   stdio: 'inherit', // 继承父进程的标准输入输出流
 });
 

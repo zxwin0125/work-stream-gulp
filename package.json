@@ -3,7 +3,9 @@
   "version": "0.1.5",
   "description": "基于 gulp 封装自动化构建工作流",
   "main": "lib/index.js",
-  "bin": "bin/zx-workflow-gulp-cli.js",
+  "bin": {
+    "zx-workflow-gulp": "./bin/zx-workflow-gulp-cli.js"
+  },
   "repository": "https://zxwin0125@github.com/zxwin0125/zx-workflow-gulp.git",
   "author": "zxwin0125 <zxwin_0125@163.com>",
   "files": [
@@ -19,6 +21,7 @@
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^3.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^9.1.0",
