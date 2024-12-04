@@ -1,6 +1,6 @@
 {
   "name": "zx-workflow-gulp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "基于 gulp 封装自动化构建工作流",
   "main": "lib/index.js",
   "bin": "bin/zx-workflow-gulp-cli.js",
