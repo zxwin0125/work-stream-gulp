@@ -1,0 +1,26 @@
+{
+  "name": "zx-workflow-gulp",
+  "version": "0.1.0",
+  "description": "基于 gulp 封装自动化构建工作流",
+  "main": "lib/index.js",
+  "repository": "https://zxwin0125@github.com/zxwin0125/zx-workflow-gulp.git",
+  "author": "zxwin0125 <zxwin_0125@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "browser-sync": "^3.0.3",
+    "del": "^8.0.0",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-load-plugins": "^2.0.8",
+    "gulp-sass": "^6.0.0",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0"
+  }
+}
