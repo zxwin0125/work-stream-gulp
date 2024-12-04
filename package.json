@@ -12,6 +12,7 @@
     "lib",
     "bin"
   ],
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.26.0",
