@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "description": "基于 gulp 封装自动化构建工作流",
   "main": "lib/index.js",
+  "bin": "bin/zx-workflow-gulp-cli.js",
   "repository": "https://zxwin0125@github.com/zxwin0125/zx-workflow-gulp.git",
   "author": "zxwin0125 <zxwin_0125@163.com>",
+  "files": [
+    "lib",
+    "bin"
+  ],
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.26.0",
