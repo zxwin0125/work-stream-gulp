@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import { spawn } from 'child_process';
-import { fileURLToPath, resolve } from 'path';
+import { resolve } from 'path'; // 从 path 模块导入 resolve
+import { fileURLToPath } from 'url'; // 从 url 模块导入 fileURLToPath
 
 // 获取命令行参数
 const args = process.argv.slice(2);
